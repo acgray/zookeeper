@@ -409,7 +409,7 @@ ZooKeeper servers and committed when a quorum of them acknowledge the proposal.
 If a proposal contains a message, the message will be delivered when the proposal 
 is committed. Acknowledgement means the server has recorded the proposal to persistent storage. 
 Our quorums have the requirement that any pair of quorum must have at least one server 
-in common. We ensure this by requiring that all quorums have size (<em>n/2+1</em>) where 
+in common. We ensure this by requiring that all quorums have a size of at least (<em>n/2+1</em>) where 
 n is the number of servers that make up a ZooKeeper service.
 </p>
 <p>
